@@ -1,14 +1,9 @@
-# [s3]
-# bucket='wcdlabbucket'
-# folder='lab2/input/'
-
-# [db]
-# host='wcdlab.cislhxldgyzd.us-west-2.rds.amazonaws.com'
-# port=3306
-# schema='superstore'
+[db]
+host="hiragana.db"
 
 [run]
 py_script="setup.py"
 
-# [api]
-# url='https://virtserver.swaggerhub.com/wcd_de_lab/top10/1.0.0/add'
+[api]
+sound="https://www.thoughtco.com/how-to-pronounce-hiragana-japanese-hiragana-with-audio-files-4077351"
+headers="'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'"

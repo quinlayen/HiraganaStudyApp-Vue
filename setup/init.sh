@@ -1,7 +1,7 @@
 #!/bin/bash
 ################
 # Run this file first
-################
+################m
 
 # Check if Python 3 is installed
 if ! command -v python3 &> /dev/null; then
