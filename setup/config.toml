@@ -1,9 +1,8 @@
 [db]
-host="hiragana.db"
+db_name="hiragana.db"
 
 [run]
 py_script="setup.py"
 
 [api]
-sound="https://www.thoughtco.com/how-to-pronounce-hiragana-japanese-hiragana-with-audio-files-4077351"
-headers="'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'"
+sound_url="https://www.thoughtco.com/how-to-pronounce-hiragana-japanese-hiragana-with-audio-files-4077351"

@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ##############################
 
 shopt -s xpg_echo
@@ -21,19 +20,22 @@ export LOGDIR=$SCRIPTS_FOLDER/log
 export SHELL_SCRIPT_NAME='run'
 export LOG_FILE=${LOGDIR}/${SHELL_SCRIPT_NAME}_${filenametime1}.log
 
-##############################
+echo $SCRIPTS_FOLDER
+echo $PYTHON_SCRIPT_NAME
+echo $
+#############################
 # GO TO SCRIPT FOLDER AND RUN
-# cd ${SCRIPTS_FOLDER}
+cd ${SCRIPTS_FOLDER}
 
 ##############################
 # SET LOG RULES
 exec > >(tee ${LOG_FILE}) 2>&1
 ##############################
 # RUN SCRIPT
-source sandbox/bin/activate
+source venv/bin/activate
 
 echo "Start Python script"
-python3 ${SCRIPTS_FOLDER/$PYTHON_SCRIPT_NAME}
+python3 ${SCRIPTS_FOLDER}/${PYTHON_SCRIPT_NAME}
 
 RC1=$?
 if [ ${RC1 -ne 0 } ]; then
@@ -47,5 +49,3 @@ echo "PROGRAM SUCCEEDED"
 exit 0
 
 deactivate
-
-
